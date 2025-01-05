@@ -1,0 +1,12 @@
+appId: com.google.samples.apps.nowinandroid.demo.debug
+name: Search
+tags:
+  - search
+---
+- launchApp:
+    clearState: true
+- tapOn: Search
+- inputText: Wear
+- assertVisible: "Wear OS"
+- tapOn: "Follow interest"
+- assertVisible: "Unfollow interest"

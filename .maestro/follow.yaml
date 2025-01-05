@@ -1,0 +1,11 @@
+appId: com.google.samples.apps.nowinandroid.demo.debug
+name: Follow
+tags:
+  - follow
+---
+- launchApp:
+    clearState: true
+- tapOn: Interests
+- tapOn: Accessibility
+- tapOn: NOT FOLLOWING
+- assertVisible: FOLLOWING

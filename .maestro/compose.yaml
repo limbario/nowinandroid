@@ -1,0 +1,18 @@
+appId: com.google.samples.apps.nowinandroid.demo.debug
+name: Compose
+tags:
+  - compose
+---
+- launchApp:
+    clearState: true
+- tapOn: Compose
+- tapOn: Done
+- scrollUntilVisible:
+    element: "WEAR OS"
+- scrollUntilVisible:
+    direction: UP
+    element: "Bookmark"
+- tapOn: Bookmark
+- tapOn: Saved
+- tapOn: Unbookmark
+- assertVisible: No saved updates
